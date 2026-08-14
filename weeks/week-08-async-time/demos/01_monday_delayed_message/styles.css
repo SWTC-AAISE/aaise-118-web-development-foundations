@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #1f2933;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d8e4ec;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+#status {
+  font-weight: bold;
+}
+

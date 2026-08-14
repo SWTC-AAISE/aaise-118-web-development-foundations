@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  color: #1f2933;
+  background: #f4f7f9;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.site-header {
+  background: #204b57;
+  color: white;
+  padding: 24px;
+}
+
+.site-header h1 {
+  margin: 0 0 12px;
+}
+
+.nav-list {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-list a {
+  color: white;
+  font-weight: bold;
+}
+
+.page {
+  max-width: 800px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.intro,
+.resource-list {
+  background: white;
+  border: 1px solid #d6dee4;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+

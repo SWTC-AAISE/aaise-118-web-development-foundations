@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  background: #f8faf9;
+  color: #202a28;
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+.resource-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.resource-card {
+  background: white;
+  border: 1px solid #d7e1dc;
+  border-radius: 8px;
+  padding: 16px;
+}
+

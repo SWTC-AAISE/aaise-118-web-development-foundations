@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background: #f6f7f5;
+  color: #232a25;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 620px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d9ded8;
+  border-radius: 8px;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-top: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+#preview {
+  font-weight: bold;
+}
+
+.note {
+  color: #56635b;
+}
+

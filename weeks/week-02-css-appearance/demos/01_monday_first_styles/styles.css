@@ -1,0 +1,19 @@
+body {
+  color: #1f2933;
+  background: #f4f7f9;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #204b57;
+}
+
+p {
+  max-width: 520px;
+  line-height: 1.5;
+}
+
+a {
+  color: #7a3e14;
+}
+

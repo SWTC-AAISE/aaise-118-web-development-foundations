@@ -1,0 +1,25 @@
+body {
+  margin: 0;
+  background: #f7f7f4;
+  color: #232721;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #dcded5;
+  border-radius: 8px;
+}
+
+button {
+  margin-right: 8px;
+  padding: 8px 12px;
+}
+
+#countDisplay {
+  font-weight: bold;
+}
+

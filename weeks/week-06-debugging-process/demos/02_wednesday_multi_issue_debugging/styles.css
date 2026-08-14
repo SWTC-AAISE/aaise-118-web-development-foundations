@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  background: #f7f5f1;
+  color: #2b2d2f;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 540px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #ddd8cf;
+  border-radius: 8px;
+}
+
+label,
+input,
+button {
+  display: block;
+  margin-top: 12px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+}
+
+.status {
+  font-weight: bold;
+}
+

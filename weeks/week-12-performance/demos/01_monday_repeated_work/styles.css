@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background: #f6f8fa;
+  color: #20262d;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d7e1e7;
+  border-radius: 8px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  padding: 10px;
+}
+
+li {
+  margin: 8px 0;
+}
+

@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  background: #f7faf8;
+  color: #202a28;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #d7e1dc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 12px;
+}
+
+pre {
+  background: #f1f4f2;
+  padding: 12px;
+  white-space: pre-wrap;
+}
+

@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  background: #f7f7f4;
+  color: #232721;
+  font-family: Arial, sans-serif;
+}
+
+.panel {
+  max-width: 520px;
+  margin: 40px auto;
+  padding: 20px;
+  background: white;
+  border: 1px solid #dcded5;
+  border-radius: 8px;
+}
+
+body.calm {
+  background: #eaf4f1;
+  color: #14312c;
+}
+
+body.contrast {
+  background: #111;
+  color: white;
+}
+
+body.contrast .panel {
+  background: #1f1f1f;
+  border-color: #777;
+}
+
+select {
+  display: block;
+  margin-top: 8px;
+  padding: 8px;
+}
+
