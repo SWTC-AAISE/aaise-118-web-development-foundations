@@ -12,6 +12,6 @@ Clone or fork assigned starter work to your personal GitHub account, develop loc
 
 ## Instructor PageForge demonstration
 
-[PageForge](https://github.com/cashmy/PageForge) is the instructor's evolving reference example. Students choose and build their own project rather than copying PageForge. The runnable weekly stages are documented in the [PageForge milestone index](https://github.com/cashmy/PageForge/blob/main/docs/PageForge_Milestone_Index.md).
+[PageForge](https://github.com/cashmy/PageForge) is the instructor's evolving reference example. Students choose and build their own project rather than copying PageForge. The in-class sequence begins with the public [Week 1 PageForge demo](https://github.com/SWTC-AAISE/aaise-118-pageforge-demo); the complete runnable stages are documented in the [PageForge milestone index](https://github.com/cashmy/PageForge/blob/main/docs/PageForge_Milestone_Index.md).
 
 See [weeks](weeks/README.md) for the release hierarchy.
