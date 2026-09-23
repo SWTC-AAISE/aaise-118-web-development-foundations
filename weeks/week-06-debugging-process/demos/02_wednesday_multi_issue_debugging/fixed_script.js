@@ -1,13 +1,13 @@
 const taskInput = document.querySelector("#taskInput");
 const addButton = document.querySelector("#addButton");
-const status = document.querySelector("#status");
+const statusMessage = document.querySelector("#status");
 const taskList = document.querySelector("#taskList");
 
 function addTask() {
   const taskText = taskInput.value.trim();
 
   if (taskText === "") {
-    status.textContent = "Please enter a task first.";
+    statusMessage.textContent = "Please enter a task first.";
     return;
   }
 
@@ -15,7 +15,7 @@ function addTask() {
   item.textContent = taskText;
   taskList.appendChild(item);
 
-  status.textContent = "Task added.";
+  statusMessage.textContent = "Task added.";
   taskInput.value = "";
 }
 
