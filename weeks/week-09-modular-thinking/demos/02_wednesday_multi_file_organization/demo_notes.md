@@ -34,6 +34,11 @@ Start from the Monday one-file version. Move one responsibility at a time into a
 - Students may load `app.js` before the files it depends on.
 - Students may confuse this with advanced ES modules.
 
+## REAL WORLD Note:
+
+- This example is TOO segregated. And in normal situations this would be only a one file application.
+- It is intentionally kept simple in order to DEMONSTRATE the concepts, NOT efficiency in coding or the best solution.
+
 ## Lab Bridge
 
 Students may keep one file if it is well organized, or use multiple files when the separation makes the project clearer. The goal is responsibility separation, not file count for its own sake.
