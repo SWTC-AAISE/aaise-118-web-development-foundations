@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Sprint - Web Animations API Comparison</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-width">
+      <p class="eyebrow">Study Sprint</p>
+      <h1>JavaScript-controlled feedback motion</h1>
+      <p class="lede">The same useful state change, now with playback controlled through JavaScript.</p>
+    </div>
+  </header>
+
+  <main class="page-width demo-layout">
+    <section class="planner-panel" aria-labelledby="planner-title">
+      <h2 id="planner-title">Create a study plan</h2>
+      <p>The form remains useful even when animation is skipped, canceled, or unavailable.</p>
+
+      <form id="plan-form" novalidate>
+        <div class="field-group">
+          <label for="focus-input">Study focus</label>
+          <input id="focus-input" name="focus" type="text" autocomplete="off" placeholder="Example: responsive navigation">
+        </div>
+        <div class="field-group">
+          <label for="minutes-input">Minutes available</label>
+          <input id="minutes-input" name="minutes" type="number" min="1" max="240" inputmode="numeric" placeholder="Example: 35">
+        </div>
+        <button class="primary-button" type="submit">Create study plan</button>
+      </form>
+
+      <div id="feedback" class="feedback is-neutral" role="status" aria-live="polite">
+        <strong id="feedback-title">Plan ready when you are</strong>
+        <span id="feedback-message">Your recommendation will appear here.</span>
+      </div>
+
+      <div class="animation-controls" aria-labelledby="controls-title">
+        <div>
+          <h3 id="controls-title">Animation controls</h3>
+          <p>Inspect playback without changing the form result.</p>
+        </div>
+        <div class="button-row">
+          <button id="replay-button" class="secondary-button" type="button">Replay</button>
+          <button id="cancel-button" class="secondary-button" type="button">Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <aside class="concept-panel" aria-labelledby="comparison-title">
+      <p class="eyebrow">Completed comparison</p>
+      <h2 id="comparison-title">What changed from Demo 1?</h2>
+      <dl>
+        <div>
+          <dt>State still belongs to JavaScript</dt>
+          <dd>Validation and visible feedback use the same clear state classes.</dd>
+        </div>
+        <div>
+          <dt>Playback now belongs to JavaScript</dt>
+          <dd><code>Element.animate()</code> returns an Animation object that code can replay or cancel.</dd>
+        </div>
+        <div>
+          <dt>The tradeoff</dt>
+          <dd>More control is available, but the code and testing surface are larger.</dd>
+        </div>
+      </dl>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

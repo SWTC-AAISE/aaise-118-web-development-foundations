@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Sprint - Purposeful Feedback Transition</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-width">
+      <p class="eyebrow">Study Sprint</p>
+      <h1>Purposeful feedback motion</h1>
+      <p class="lede">Motion confirms a state change without delaying the result.</p>
+    </div>
+  </header>
+
+  <main class="page-width demo-layout">
+    <section class="planner-panel" aria-labelledby="planner-title">
+      <h2 id="planner-title">Create a study plan</h2>
+      <p>Enter a focus and the time available. The result remains understandable with or without motion.</p>
+
+      <form id="plan-form" novalidate>
+        <div class="field-group">
+          <label for="focus-input">Study focus</label>
+          <input id="focus-input" name="focus" type="text" autocomplete="off" placeholder="Example: responsive navigation">
+        </div>
+
+        <div class="field-group">
+          <label for="minutes-input">Minutes available</label>
+          <input id="minutes-input" name="minutes" type="number" min="1" max="240" inputmode="numeric" placeholder="Example: 35">
+        </div>
+
+        <button type="submit">Create study plan</button>
+      </form>
+
+      <div id="feedback" class="feedback is-neutral" role="status" aria-live="polite">
+        <strong id="feedback-title">Plan ready when you are</strong>
+        <span id="feedback-message">Your recommendation will appear here.</span>
+      </div>
+    </section>
+
+    <aside class="concept-panel" aria-labelledby="ownership-title">
+      <p class="eyebrow">Separation of concerns</p>
+      <h2 id="ownership-title">Who controls what?</h2>
+      <dl>
+        <div>
+          <dt>JavaScript</dt>
+          <dd>Validation, recommendation, and state classes</dd>
+        </div>
+        <div>
+          <dt>CSS</dt>
+          <dd>Color, transition, keyframe emphasis, and reduced motion</dd>
+        </div>
+        <div>
+          <dt>HTML</dt>
+          <dd>Labels, form structure, and status semantics</dd>
+        </div>
+      </dl>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

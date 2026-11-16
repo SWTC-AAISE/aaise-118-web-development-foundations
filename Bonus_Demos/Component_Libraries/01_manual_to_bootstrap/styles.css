@@ -1,0 +1,7 @@
+body {
+  min-height: 100vh;
+}
+
+.planner-panel {
+  max-width: 46rem;
+}

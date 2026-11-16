@@ -1,0 +1,52 @@
+:root {
+  --course-navy: #132a44;
+  --course-teal: #006f78;
+  --course-gold: #e4a11b;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--course-navy);
+  background: #eef3f6;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  color: var(--course-teal);
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.plan-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-left: 6px solid var(--course-gold);
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgb(19 42 68 / 10%);
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--course-teal);
+  --bs-btn-border-color: var(--course-teal);
+  --bs-btn-hover-bg: #00575e;
+  --bs-btn-hover-border-color: #00575e;
+}
+
+.btn:focus-visible,
+.btn-close:focus-visible {
+  outline: 3px solid var(--course-gold);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+@media (max-width: 680px) {
+  .plan-panel {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+

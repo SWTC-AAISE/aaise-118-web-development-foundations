@@ -1,0 +1,94 @@
+:root {
+  --sprint-navy: #17324d;
+  --sprint-teal: #00767d;
+  --sprint-teal-dark: #005a60;
+  --sprint-gold: #e0a126;
+  --sprint-ink: #23313c;
+  --sprint-muted: #526470;
+  --sprint-surface: #ffffff;
+  --sprint-canvas: #edf3f4;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--sprint-ink);
+  background: var(--sprint-canvas);
+}
+
+.site-header {
+  color: #ffffff;
+  background: var(--sprint-navy);
+  border-bottom: 0.35rem solid var(--sprint-gold) !important;
+}
+
+.eyebrow {
+  color: var(--sprint-teal);
+  letter-spacing: 0;
+}
+
+.site-header .eyebrow {
+  color: #9fe3e3;
+}
+
+.planner-panel {
+  max-width: 46rem;
+  border-color: #c5d4d8 !important;
+  border-left: 0.4rem solid var(--sprint-gold) !important;
+}
+
+.supporting-text {
+  color: var(--sprint-muted);
+}
+
+.ownership-panel {
+  background: #dcecee;
+  border-color: #a8c7ca !important;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--sprint-teal);
+  --bs-btn-border-color: var(--sprint-teal);
+  --bs-btn-hover-bg: var(--sprint-teal-dark);
+  --bs-btn-hover-border-color: var(--sprint-teal-dark);
+  --bs-btn-active-bg: var(--sprint-teal-dark);
+  --bs-btn-active-border-color: var(--sprint-teal-dark);
+  --bs-btn-disabled-bg: var(--sprint-teal);
+  --bs-btn-disabled-border-color: var(--sprint-teal);
+  font-weight: 700;
+}
+
+.form-control:focus,
+.btn:focus-visible {
+  border-color: var(--sprint-navy);
+  outline: 0.2rem solid var(--sprint-gold);
+  outline-offset: 0.18rem;
+  box-shadow: none;
+}
+
+.alert-success {
+  color: #123f32;
+  background: #dff3e9;
+  border-color: #8fcab3;
+}
+
+.alert-warning {
+  color: #543700;
+  background: #fff2cf;
+  border-color: #d6a93e;
+}
+
+@media (max-width: 575.98px) {
+  main.container {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  .planner-panel,
+  .ownership-panel {
+    padding: 1.25rem !important;
+  }
+
+  .btn-primary {
+    width: 100%;
+  }
+}

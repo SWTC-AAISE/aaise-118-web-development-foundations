@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Native Popover Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <p class="eyebrow">Study Sprint</p>
+    <h1>Weekly focus</h1>
+    <p class="lede">Choose a realistic status for the current task.</p>
+
+    <section class="task" aria-labelledby="task-title">
+      <div>
+        <p class="task-label">Current task</p>
+        <h2 id="task-title">Draft capstone navigation</h2>
+      </div>
+
+      <div class="status-row">
+        <span class="status">In progress</span>
+        <button
+          type="button"
+          class="help-button"
+          popovertarget="statusHelp"
+          aria-label="Explain the In progress status"
+        >?</button>
+      </div>
+    </section>
+
+    <p>
+      The rest of this page remains available while the short explanation is open.
+    </p>
+  </main>
+
+  <aside id="statusHelp" popover aria-labelledby="statusHelpTitle">
+    <h2 id="statusHelpTitle">In progress</h2>
+    <p>The task has started and still needs meaningful work before review.</p>
+  </aside>
+</body>
+</html>
+

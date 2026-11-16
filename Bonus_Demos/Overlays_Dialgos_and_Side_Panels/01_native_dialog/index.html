@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Native Dialog Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="page-shell">
+    <p class="eyebrow">Study Sprint</p>
+    <h1>Project overview</h1>
+    <p class="lede">
+      Review the current project summary without leaving the planning page.
+    </p>
+
+    <section class="project-card" aria-labelledby="project-title">
+      <div>
+        <p class="status-label">Current project</p>
+        <h2 id="project-title">Weekly Study Planner</h2>
+        <p>Organize course tasks and choose a realistic focus for the week.</p>
+      </div>
+      <button id="openDetails" type="button">View project details</button>
+    </section>
+
+    <p id="pageStatus" class="page-status" aria-live="polite">
+      Project details are closed.
+    </p>
+  </main>
+
+  <dialog id="projectDialog" aria-labelledby="dialogTitle">
+    <div class="dialog-content">
+      <p class="eyebrow">Project details</p>
+      <h2 id="dialogTitle">Weekly Study Planner</h2>
+      <p>
+        The planner helps students identify a small set of weekly tasks and
+        choose one immediate next action.
+      </p>
+      <dl>
+        <div>
+          <dt>Primary user</dt>
+          <dd>Students balancing several courses</dd>
+        </div>
+        <div>
+          <dt>Primary action</dt>
+          <dd>Add and prioritize a study task</dd>
+        </div>
+      </dl>
+      <button id="closeDetails" type="button" autofocus>Close details</button>
+    </div>
+  </dialog>
+</body>
+</html>
+

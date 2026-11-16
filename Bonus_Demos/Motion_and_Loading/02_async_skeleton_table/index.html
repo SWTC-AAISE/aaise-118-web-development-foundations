@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Study Sprint - Async Skeleton Table</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="page-width">
+      <p class="eyebrow">Study Sprint</p>
+      <h1>Resource search loading states</h1>
+      <p class="lede">A stable table explains waiting without flashing placeholders for every keystroke.</p>
+    </div>
+  </header>
+
+  <main class="page-width">
+    <section class="search-panel" aria-labelledby="search-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Async skeleton table</p>
+          <h2 id="search-title">Find a study resource</h2>
+        </div>
+        <button id="reset-button" class="secondary-button" type="button">Reset demo</button>
+      </div>
+
+      <div class="controls">
+        <div class="field-group">
+          <label for="search-input">Filter resources</label>
+          <input id="search-input" type="search" autocomplete="off" placeholder="Try: css, javascript, security, or no-match">
+        </div>
+
+        <div class="field-group">
+          <label for="scenario-select">Simulated response</label>
+          <select id="scenario-select">
+            <option value="fast">Fast - no skeleton expected</option>
+            <option value="slow" selected>Slow - skeleton appears</option>
+            <option value="error">Error - recovery state</option>
+          </select>
+        </div>
+      </div>
+
+      <p id="loading-status" class="status-message" role="status" aria-live="polite">
+        Showing all resources.
+      </p>
+
+      <div id="results-region" class="table-region" aria-busy="false" aria-describedby="loading-status">
+        <table>
+          <caption>Study resources matching the current filter</caption>
+          <thead>
+            <tr>
+              <th scope="col">Resource</th>
+              <th scope="col">Topic</th>
+              <th scope="col">Format</th>
+              <th scope="col">Minutes</th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+
+      <div class="timing-key" aria-label="Demo timing values">
+        <span><strong>Debounce:</strong> 500 ms</span>
+        <span><strong>Skeleton threshold:</strong> 300 ms</span>
+        <span><strong>Slow response:</strong> 1300 ms</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
